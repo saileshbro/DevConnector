@@ -1,11 +1,11 @@
 const mongoose = require('mongoose')
-const config = require('config')
-const db = config.get('mongoURI')
 const connectDB = async () => {
   try {
-    await mongoose.connect(db, {
+    await mongoose.connect(process.env.MONGO_URI, {
       useNewUrlParser: true,
-      useUnifiedTopology: true
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false
     })
     console.log('MongoDB Connected...')
   } catch (error) {
@@ -14,5 +14,7 @@ const connectDB = async () => {
     process.exit(1)
   }
 }
-
+// inport all the models to be registered
+require('../models/User')
+require('../models/Profile')
 module.exports = connectDB
