@@ -17,4 +17,5 @@ const connectDB = async () => {
 // inport all the models to be registered
 require('../models/User')
 require('../models/Profile')
+require('../models/Post')
 module.exports = connectDB

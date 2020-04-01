@@ -32,16 +32,6 @@ exports.validateExperience = [
     .not()
     .isEmpty()
 ]
-exports.checkErrors = (req, res, next) => {
-  const errors = validationResult(req)
-  if (!errors.isEmpty()) {
-    return res.status(400).json({
-      errors: errors.array()
-    })
-  } else {
-    next()
-  }
-}
 exports.validateEducation = [
   check('school', 'School is required')
     .not()
@@ -56,3 +46,18 @@ exports.validateEducation = [
     .not()
     .isEmpty()
 ]
+exports.validatePost = [
+  check('text', 'Text is required')
+    .not()
+    .isEmpty()
+]
+exports.checkErrors = (req, res, next) => {
+  const errors = validationResult(req)
+  if (!errors.isEmpty()) {
+    return res.status(400).json({
+      errors: errors.array()
+    })
+  } else {
+    next()
+  }
+}
