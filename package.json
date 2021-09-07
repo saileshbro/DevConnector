@@ -21,7 +21,7 @@
 	},
 	"homepage": "https://github.com/saileshbro/DevConnector#readme",
 	"dependencies": {
-		"axios": "^0.21.1",
+		"axios": "^0.21.4",
 		"bcryptjs": "^2.4.3",
 		"dotenv": "^10.0.0",
 		"express": "^4.17.1",
