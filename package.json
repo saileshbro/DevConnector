@@ -33,6 +33,6 @@
 	},
 	"devDependencies": {
 		"concurrently": "^6.3.0",
-		"nodemon": "^2.0.14"
+		"nodemon": "^2.0.15"
 	}
 }
