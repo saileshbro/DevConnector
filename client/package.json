@@ -12,7 +12,7 @@
     "react-dom": "^16.14.0",
     "react-moment": "^0.9.7",
     "react-redux": "^7.2.8",
-    "react-router-dom": "^5.3.1",
+    "react-router-dom": "^5.3.2",
     "react-scripts": "5.0.1",
     "redux": "^4.2.0",
     "redux-devtools-extension": "^2.13.9",
