@@ -28,7 +28,7 @@
 		"express-validator": "^7.0.1",
 		"gravatar": "^1.8.2",
 		"jsonwebtoken": "^9.0.0",
-		"mongoose": "^7.2.4",
+		"mongoose": "^7.3.0",
 		"uuid": "^9.0.0"
 	},
 	"devDependencies": {
