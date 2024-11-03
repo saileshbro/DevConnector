@@ -29,7 +29,7 @@
 		"gravatar": "^1.8.2",
 		"jsonwebtoken": "^9.0.2",
 		"mongoose": "^8.7.3",
-		"uuid": "^10.0.0"
+		"uuid": "^11.0.2"
 	},
 	"devDependencies": {
 		"concurrently": "^8.2.2",
